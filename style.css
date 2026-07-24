@@ -29,7 +29,7 @@ header {
     box-shadow: 0 4px 10px #0000;
     transition: all .4s ease;
     width: 40vw;
-    min-height: 50vh;
+    min-height: 25rem;
 }
 
 .card:hover {
@@ -69,8 +69,9 @@ header {
     text-align: center;
 }
 .resultado{
-    width: 80%;
-    height: 6rem;
+    padding: 4px;
+    min-width: 80%;
+    min-height: 6rem;
     background-color: #2e2d2d;
     display: flex;
     justify-content: center;
@@ -119,4 +120,10 @@ header {
 @keyframes spin {
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 80vw;
+    }
 }
